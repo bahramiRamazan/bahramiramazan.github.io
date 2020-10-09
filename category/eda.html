@@ -665,7 +665,7 @@
 </pre></div>
 
 
-<p><img alt="png" src="Kankor_files/Kankor_16_1.png"></p>
+<p><img alt="png" src="../Kankor_files/Kankor_16_1.png"></p>
 <div class="highlight"><pre><span></span><span class="c1">#(Q) how the participant from each province distributed based on gender?</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">df</span>
 <span class="c1"># get the weight for each year, grouped by sex:</span>
@@ -680,7 +680,7 @@
 </pre></div>
 
 
-<p><img alt="png" src="Kankor_files/Kankor_17_0.png"></p>
+<p><img alt="png" src="../Kankor_files/Kankor_17_0.png"></p>
 <div class="highlight"><pre><span></span><span class="c1">#(Q) How the average marks of girls and boys compared in each province?</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">df</span>
 <span class="c1"># get the weight for each year, grouped by sex:</span>
@@ -691,7 +691,7 @@
 </pre></div>
 
 
-<p><img alt="png" src="Kankor_files/Kankor_18_0.png"></p>
+<p><img alt="png" src="../Kankor_files/Kankor_18_0.png"></p>
 <div class="highlight"><pre><span></span><span class="c1">#(Q) what university/institue has accepted the highest number of students?</span>
 
 
@@ -747,7 +747,7 @@
 </pre></div>
 
 
-<p><img alt="png" src="Kankor_files/Kankor_19_0.png"></p>
+<p><img alt="png" src="../Kankor_files/Kankor_19_0.png"></p>
 <div class="highlight"><pre><span></span><span class="c1">#(Q) How is the overall performance of each province, and their comparison? </span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
@@ -756,7 +756,7 @@
 </pre></div>
 
 
-<p><img alt="png" src="Kankor_files/Kankor_20_0.png"></p>
+<p><img alt="png" src="../Kankor_files/Kankor_20_0.png"></p>
 <div class="highlight"><pre><span></span><span class="c1">#(Q) How is the max, min and mean of each province?</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;ggplot&#39;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;province&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span> <span class="s1">&#39;score&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">]})</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">30</span><span class="p">),</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">)</span>
@@ -768,7 +768,7 @@
 </pre></div>
 
 
-<p><img alt="png" src="Kankor_files/Kankor_21_1.png"></p>
+<p><img alt="png" src="../Kankor_files/Kankor_21_1.png"></p>
 <div class="highlight"><pre><span></span><span class="c1">#(Q) what are top schools in terms of average score  of the  participants?</span>
 
 
@@ -823,7 +823,7 @@
 </pre></div>
 
 
-<p><img alt="png" src="Kankor_files/Kankor_22_0.png"></p>
+<p><img alt="png" src="../Kankor_files/Kankor_22_0.png"></p>
 <div class="highlight"><pre><span></span><span class="c1">#(Q)What ar top schools in terms of number of participants?</span>
 
 
@@ -881,7 +881,7 @@
 </pre></div>
 
 
-<p><img alt="png" src="Kankor_files/Kankor_23_0.png"></p>
+<p><img alt="png" src="../Kankor_files/Kankor_23_0.png"></p>
 <div class="highlight"><pre><span></span><span class="c1">#(Q)what are top results based on average score of students from that category of result</span>
 
 <span class="n">result_cnt</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;result&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()[</span><span class="s2">&quot;score&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -941,7 +941,7 @@
 </pre></div>
 
 
-<p><img alt="png" src="Kankor_files/Kankor_24_1.png"></p>
+<p><img alt="png" src="../Kankor_files/Kankor_24_1.png"></p>
 <div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;score&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;score&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;score&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">())</span>
@@ -952,7 +952,7 @@
 </pre></div>
 
 
-<p><img alt="png" src="Kankor_files/Kankor_25_1.png"></p>
+<p><img alt="png" src="../Kankor_files/Kankor_25_1.png"></p>
 <div class="highlight"><pre><span></span><span class="c1">#(Q) What are top result category based on the number of accepted students in that category. </span>
 <span class="n">df_test</span><span class="o">=</span><span class="n">df</span>
 <span class="n">private</span><span class="o">=</span><span class="s1">&#39;واجد شرایط جذب در مؤسسات تحصیلات عالی خصوصی&#39;</span>
@@ -984,7 +984,7 @@
 </pre></div>
 
 
-<p><img alt="png" src="Kankor_files/Kankor_27_1.png"></p>
+<p><img alt="png" src="../Kankor_files/Kankor_27_1.png"></p>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">bidi.algorithm</span> <span class="kn">import</span> <span class="n">get_display</span>
 <span class="kn">from</span> <span class="nn">arabic_reshaper</span> <span class="kn">import</span> <span class="n">reshape</span>
@@ -1161,7 +1161,7 @@
 </pre></div>
 
 
-<p><img alt="png" src="Kankor_files/Kankor_30_0.png"></p>
+<p><img alt="png" src="../Kankor_files/Kankor_30_0.png"></p>
 <div class="highlight"><pre><span></span><span class="c1">#(Q) how could we check data of one particular faculty, say faculty of computer science ?</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">bidi.algorithm</span> <span class="kn">import</span> <span class="n">get_display</span>
@@ -1247,7 +1247,7 @@
 </pre></div>
 
 
-<p><img alt="png" src="Kankor_files/Kankor_31_0.png"></p>
+<p><img alt="png" src="../Kankor_files/Kankor_31_0.png"></p>
 <div class="highlight"><pre><span></span><span class="c1">#(Q) how could we check data of one particular faculty, say faculty of computer science ?</span>
 
 <span class="n">uni</span><span class="o">=</span><span class="s1">&#39;پوهنځی کمپیوتر ساینس پوهنتون کابل&#39;</span>
@@ -1312,7 +1312,7 @@
 </pre></div>
 
 
-<p><img alt="png" src="Kankor_files/Kankor_32_0.png"></p>
+<p><img alt="png" src="../Kankor_files/Kankor_32_0.png"></p>
 <h1>Violin plots</h1>
 <div class="highlight"><pre><span></span><span class="c1"># A violin plot</span>
 <span class="c1"># Denser regions of the data are fatter, and sparser ones thinner </span>
@@ -1328,7 +1328,7 @@
 </pre></div>
 
 
-<p><img alt="png" src="Kankor_files/Kankor_34_0.png"></p>                </article>
+<p><img alt="png" src="../Kankor_files/Kankor_34_0.png"></p>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
                     <h1>Other articles</h1>
